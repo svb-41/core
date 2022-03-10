@@ -1,0 +1,13 @@
+# JS Stuff
+node_modules/
+
+# TypeScript compilation result
+build/
+types.js
+types.d.ts
+types.d.ts.map
+
+# OS Stuff
+.DS_Store
+Thumbs.db
+*~
