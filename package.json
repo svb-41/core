@@ -1,6 +1,6 @@
 {
   "name": "@svb-41/core",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "build/index.js",
   "authors": [
     "Guillaume Hivert <hivert.is.coming@gmail.com>",
@@ -16,8 +16,7 @@
     "build": "yarn build:module && yarn build:raw && yarn build:convert-raw",
     "build:module": "tsc",
     "build:raw": "tsc --outFile types.js --emitDeclarationOnly --declarationMap false",
-    "build:convert-raw": "node scripts/prepare.mjs",
-    "compile": "webpack && node scripts/compile.mjs"
+    "build:convert-raw": "node scripts/prepare.mjs"
   },
   "dependencies": {},
   "devDependencies": {
