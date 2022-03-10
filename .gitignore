@@ -2,10 +2,12 @@
 node_modules/
 
 # TypeScript compilation result
+dist/
 build/
 types.js
 types.d.ts
 types.d.ts.map
+lib.js
 
 # OS Stuff
 .DS_Store

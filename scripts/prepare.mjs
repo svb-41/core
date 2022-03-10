@@ -17,13 +17,18 @@ const replaceModuleNames = file => {
 
 const dirname = process.cwd()
 const filepath = path.resolve(dirname, 'types.d.ts')
+const jspath = filepath.replace('.d.ts', '.js')
 const file = await fs.readFile(filepath, 'utf-8')
 const withModuleNames = replaceModuleNames(file)
 const replaced = withModuleNames.replace(
   /declare module "index"/g,
   'declare module "@svb-41/core"'
 )
-await fs.writeFile(filepath, replaced)
-
-const jspath = filepath.replace('.d.ts', '.js')
-await fs.writeFile(jspath, `export default \`${replaced}\``)
+// await fs.writeFile(jspath, `export default \`${replaced}\``)
+await fs.writeFile(
+  filepath,
+  `declare module "@svb-41/core/types" {
+  const types: string
+  export default types
+}`
+)
