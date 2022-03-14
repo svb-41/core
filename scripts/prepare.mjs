@@ -5,12 +5,12 @@ import * as path from 'path'
 const replaceModuleNames = file => {
   return file
     .replace(/declare module "comm/g, 'declare module "@svb-41/core/comm')
-    .replace(/declare module "controller/g, 'declare module "@svb-41/core/controller')
-    .replace(/declare module "helpers/g, 'declare module "@svb-41/core/helpers')
+    .replace(/declare module "geometry/g, 'declare module "@svb-41/core/geometry')
+    .replace(/declare module "radar/g, 'declare module "@svb-41/core/radar')
     .replace(/declare module "ship/g, 'declare module "@svb-41/core/ship')
     .replace(/export (.*) from "comm/g, 'export $1 from "@svb-41/core/comm')
-    .replace(/export (.*) from "controller/g, 'export $1 from "@svb-41/core/controller')
-    .replace(/export (.*) from "helpers/g, 'export $1 from "@svb-41/core/helpers')
+    .replace(/export (.*) from "geometry/g, 'export $1 from "@svb-41/core/geometry')
+    .replace(/export (.*) from "radar/g, 'export $1 from "@svb-41/core/radar')
     .replace(/export (.*) from "ship/g, 'export $1 from "@svb-41/core/ship')
     .replace(/\/\/\#.*/, '')
 }
@@ -24,7 +24,7 @@ const replaced = withModuleNames.replace(
   /declare module "index"/g,
   'declare module "@svb-41/core"'
 )
-// await fs.writeFile(jspath, `export default \`${replaced}\``)
+await fs.writeFile(jspath, `export default \`${replaced}\``)
 await fs.writeFile(
   filepath,
   `declare module "@svb-41/core/types" {
