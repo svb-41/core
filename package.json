@@ -22,7 +22,7 @@
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
-    "@svb-41/engine": "^0.1.0",
+    "@svb-41/engine": "^0.4.0",
     "@types/node": "^17.0.21",
     "babel-loader": "^8.2.3",
     "ts-loader": "^9.2.7",

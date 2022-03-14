@@ -918,10 +918,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@svb-41/engine@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@svb-41/engine/-/engine-0.1.0.tgz#6cb0ce2d66d028f2e34c1e310e8f40df5e164fab"
-  integrity sha512-ndJBPPNeScL2jSGZJKSUEXz7TzNfDUzt3R9Tj0IU1kzH/2P3xdNzl9X5N3Koitfd8MnFHtP3e1lG6zOlBUBFug==
+"@svb-41/engine@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@svb-41/engine/-/engine-0.4.0.tgz#301101316f01e5d83be5c9d9791ab905807497ce"
+  integrity sha512-101kAiqR+4NzHvbmWGq9cNNpx2gJTOodE07PyoXWTKicwEE0CCsmoa4PveUtA0L/aK4CN6ycIiMuLPdRbcenPA==
   dependencies:
     uuid "^8.3.2"
 
