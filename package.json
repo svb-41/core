@@ -18,9 +18,7 @@
     "build:raw": "tsc --outFile types.js --emitDeclarationOnly --declarationMap false",
     "build:convert-raw": "node scripts/prepare.mjs"
   },
-  "dependencies": {
-    "@svb-41/core": "^0.4.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
