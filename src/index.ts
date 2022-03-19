@@ -4,6 +4,7 @@ export * as comm from './comm'
 export * as geometry from './geometry'
 export * as ship from './ship'
 export * as radar from './radar'
+export * as console from './console'
 
 export type BulletContext<Data = any> = svb.engine.control.BulletContext<Data>
 export type BulletController<Data = any> = svb.engine.control.BulletController<Data>
