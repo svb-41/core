@@ -14,6 +14,10 @@ export type Context<Data = any> = svb.engine.control.Context<Data>
 export type AI<Data = any> = svb.engine.control.AI<Data>
 export type BulletAI<Data = any> = svb.engine.control.BulletAI<Data>
 
+/** Position of an item in space.
+ * It has two coordinates X and Y.
+ * Direction is in radians.
+ * Speed in number. */
 export type Position = svb.engine.ship.Position
 export type Instruction = svb.engine.control.Instruction
 export type Idle = svb.engine.control.Idle
