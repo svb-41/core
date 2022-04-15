@@ -21,6 +21,7 @@ export type Stats = engine.ship.Stats
 export type Bullet = engine.ship.Bullet
 
 /** The result of the radar doesn't contains the distance of the object.
+ * You can have the signature of the object in the result.
  * You can have it with sqrt(dist2(self.position, radar.position)). */
 export type RadarResult = engine.ship.RadarResult
 
