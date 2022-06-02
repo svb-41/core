@@ -1,6 +1,6 @@
 {
   "name": "@svb-41/core",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "main": "build/index.js",
   "authors": [
     "Guillaume Hivert <hivert.is.coming@gmail.com>",
@@ -22,7 +22,7 @@
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
-    "@svb-41/engine": "^0.12.0",
+    "@svb-41/engine": "^0.13.0",
     "@types/node": "^17.0.21",
     "babel-loader": "^8.2.3",
     "ts-loader": "^9.2.7",
